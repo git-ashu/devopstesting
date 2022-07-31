@@ -2,7 +2,8 @@ pipeline {
     agent { label 'maven-node' }
     
     tools {
-     maven "maven"   
+     //maven "maven"
+        tool name: 'maven', type: 'maven'
     }
 
     stages {
