@@ -1,11 +1,13 @@
 pipeline {
     agent { label 'maven-node' }
     
-    tools {
+    //tools {
      //maven "maven"
-        tool name: 'maven', type: 'maven'
-    }
+     
+    //}
 
+    tool name: 'maven', type: 'maven'
+    
     stages {
         stage('Clone') {
             steps {
