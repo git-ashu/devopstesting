@@ -1,5 +1,9 @@
 pipeline {
     agent { label 'maven-node' }
+    
+    tools {
+     maven "maven"   
+    }
 
     stages {
         stage('Clone') {
